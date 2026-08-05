@@ -1,5 +1,7 @@
+import React from 'react';
 import { Redirect } from '@docusaurus/router';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 export default function Home() {
-  return <Redirect to="/ci_cd_tutorial/docs/" />;
+  return <Redirect to={useBaseUrl('/docs')} />;
 }
